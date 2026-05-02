@@ -14,38 +14,40 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 export const projects = [
+  // {
+  //   id: 1,
+  //   title: "Online Book Borrowing Platform",
+  //   desc: "A comprehensive digital library system where users can browse, search, and borrow books with secure authentication using Better Auth.",
+  //   tags: ["Next.js", "MongoDB", "Better Auth", "API"],
+  //   image:
+  //     "https://i.ibb.co.com/7t31QsDx/localhost-3000-Online-book-borrowing-platform-cvscreenshot.jpg",
+  //   github: "https://github.com/ashikur-rahman/online-book-borrowing-platform",
+  //   live: "https://online-book-borrowing.vercel.app",
+  // },
   {
     id: 1,
-    title: "Online Book Borrowing Platform",
-    desc: "A comprehensive digital library system where users can browse, search, and borrow books with secure authentication using Better Auth.",
-    tags: ["Next.js", "MongoDB", "Better Auth", "API"],
-    image:
-      "https://i.ibb.co.com/7t31QsDx/localhost-3000-Online-book-borrowing-platform-cvscreenshot.jpg",
-    github: "https://github.com/ashikur-rahman/online-book-borrowing-platform",
-    live: "https://online-book-borrowing.vercel.app",
-  },
-  {
-    id: 2,
     title: "PixGen Web Application",
     desc: "A creative web app for generating and customizing digital assets with secure user accounts and content management.",
     tags: ["Next.js", "Better Auth", "UI/UX", "API"],
     image:
       "https://i.ibb.co.com/v60Y6XQL/localhost-3000-pixgen-web-application-cvscreenshot.jpg",
-    github: "https://github.com/ashikur-rahman/pixgen-web-application",
+    github:
+      "https://github.com/ashikur-rahman-programmer/pixgen-web-application",
     live: "https://pixgen-web.vercel.app",
   },
   {
-    id: 3,
+    id: 2,
     title: "The Dragon News Website",
     desc: "A dynamic news portal delivering real-time updates with authentication, protected content, and modern Next.js architecture.",
     tags: ["Next.js", "Better Auth", "MongoDB", "App Router"],
     image:
       "https://i.ibb.co.com/gFM6sfkT/localhost-3001-Dragon-News-Home-cvscreenshot.jpg",
-    github: "https://github.com/ashikur-rahman/the-dragon-news-website",
+    github:
+      "https://github.com/ashikur-rahman-programmer/the-dragon-news-website",
     live: "https://the-dragon-news.vercel.app",
   },
   {
-    id: 4,
+    id: 3,
     title: "Digital Tools Buying Website",
     desc: "A React-based platform for browsing and purchasing digital tools with API integration and dynamic UI.",
     tags: ["React", "JavaScript", "API", "CSS"],
@@ -56,7 +58,7 @@ export const projects = [
     live: "https://digital-tools-buying-website1.netlify.app/",
   },
   {
-    id: 5,
+    id: 4,
     title: "Job Application Tracker",
     desc: "Helps users track job applications, status, and progress with a clean UI.",
     tags: ["HTML", "CSS", "JavaScript"],
@@ -67,7 +69,7 @@ export const projects = [
     live: "https://ashikur-rahman-programmer.github.io/job-application-tracker-website/",
   },
   {
-    id: 6,
+    id: 5,
     title: "AI Model Hub",
     desc: "Showcases AI models and tools with a modern interface using React and APIs.",
     tags: ["React", "API", "Tailwind"],
@@ -77,7 +79,7 @@ export const projects = [
     live: "https://ai-model-website.netlify.app/",
   },
   {
-    id: 7,
+    id: 6,
     title: "GitHub Issues Tracker",
     desc: "Tracks GitHub issues using API and displays them in a structured UI.",
     tags: ["React", "API", "GitHub API"],
@@ -163,23 +165,23 @@ export default function Projects() {
 
                   {/* Buttons */}
                   <div className="flex gap-3 mt-auto">
-                    <motion.button
+                    <motion.a
                       href={project.github}
                       target="_blank"
                       whileHover={{ scale: 1.05 }}
                       className="hero-btn px-6 py-2 border border-[#3b82f6]/40 text-white rounded-full flex items-center gap-2 group cursor-pointer"
                     >
                       <FaGithub /> Code
-                    </motion.button>
+                    </motion.a>
 
-                    <motion.button
+                    <motion.a
                       href={project.live}
                       target="_blank"
                       whileHover={{ scale: 1.05 }}
                       className="hero-btn px-6 py-2 border border-[#3b82f6]/40 text-white rounded-full flex items-center gap-2 group cursor-pointer"
                     >
                       <MoveUpRight /> Live
-                    </motion.button>
+                    </motion.a>
                   </div>
                 </div>
               </motion.div>

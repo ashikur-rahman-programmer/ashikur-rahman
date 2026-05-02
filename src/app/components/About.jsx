@@ -100,12 +100,14 @@ export default function About() {
             </p>
           </div>
 
-          <motion.button
+          <motion.a
+            href="https://github.com/ashikur-rahman-programmer/"
+            target="_blank"
             whileHover={{ scale: 1.05 }}
-            className="hero-btn px-6 py-2 border border-[#3b82f6]/40 text-white rounded-full flex items-center gap-2 group cursor-pointer"
+            className="hero-btn px-6 py-2 border border-[#3b82f6]/40 text-white rounded-full inline-flex items-center gap-2 group cursor-pointer"
           >
             <FaGithub /> View My Github
-          </motion.button>
+          </motion.a>
         </div>
       </div>
     </section>
