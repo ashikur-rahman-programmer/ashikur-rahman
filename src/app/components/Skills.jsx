@@ -66,11 +66,13 @@ export default function Skills() {
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-5xl font-black text-white mb-4 tracking-tighter"
+            className="text-4xl md:text-5xl font-black text-white mb-4 tracking-tighter "
           >
-            Skills &{" "}
+            <span className="bg-gradient-to-r from-cyan-600 to-purple-600 bg-clip-text text-transparent">
+              Skills &{" "}
+            </span>
             <span className="bg-gradient-to-r from-[#3b82f6] to-[#ef4444] bg-clip-text text-transparent">
-              Technologies
+              Tech Stack
             </span>
           </motion.h2>
         </div>

@@ -79,7 +79,7 @@ export default function About() {
 
         {/* RIGHT CONTENT */}
         <div className="space-y-6">
-          <h2 className="about-text text-4xl md:text-5xl font-bold">
+          <h2 className="about-text text-4xl md:text-5xl font-bold bg-gradient-to-r from-[#3b82f6] to-[#ef4444] bg-clip-text text-transparent">
             About <span className="text-blue-500">Me</span>
           </h2>
 

@@ -94,10 +94,10 @@ Message: ${form.message}`;
       <div className="container mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold  mb-4 bg-gradient-to-r from-[#3b82f6] to-[#ef4444] bg-clip-text text-transparent">
             Contact Us
           </h2>
-          <p className="text-gray-400 max-w-xl mx-auto text-sm md:text-base">
+          <p className="  max-w-xl mx-auto text-sm md:text-base  bg-top-right">
             Have a project in mind? Let's connect.
           </p>
         </div>
@@ -106,7 +106,7 @@ Message: ${form.message}`;
           {/* LEFT */}
           <div className="contact-left space-y-8">
             <div>
-              <h3 className="text-3xl font-bold text-white mb-4">
+              <h3 className="text-3xl font-bold mb-4 bg-gradient-to-r from-cyan-600 to-purple-800 bg-clip-text text-transparent">
                 Get in touch today
               </h3>
               <p className="text-gray-400 max-w-md">

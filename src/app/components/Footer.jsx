@@ -15,19 +15,36 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
-  const footerRef = useRef();
+  const footerRef = useRef(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
+      // 🔥 TOP CONTENT ANIMATION (RUN ONCE ONLY)
       gsap.from(".footer-item", {
         scrollTrigger: {
           trigger: footerRef.current,
           start: "top 90%",
+          toggleActions: "play none none none",
+          once: true,
         },
         y: 40,
         opacity: 0,
         duration: 0.6,
         stagger: 0.1,
+        ease: "power3.out",
+      });
+
+      // 🔥 COPYRIGHT ANIMATION (SEPARATE CONTROL)
+      gsap.from(".footer-copyright", {
+        scrollTrigger: {
+          trigger: footerRef.current,
+          start: "top 95%",
+          toggleActions: "play none none none",
+          once: true,
+        },
+        opacity: 0,
+        y: 20,
+        duration: 0.6,
         ease: "power3.out",
       });
     }, footerRef);
@@ -41,30 +58,28 @@ export default function Footer() {
       className="bg-[#080c15] pt-16 pb-8 px-6 border-t border-white/5"
     >
       <div className="container mx-auto">
-        {/* TOP */}
+        {/* TOP SECTION */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-8 mb-10">
-          {/* Logo */}
+          {/* LOGO */}
           <motion.div className="footer-item" whileHover={{ scale: 1.05 }}>
             <Image src={logoImg} alt="Logo" width={40} height={40} />
           </motion.div>
 
-          {/* Links */}
+          {/* LINKS */}
           <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8">
-            {["Home", "About", "Skills", "Projects", "Contact"].map(
-              (link, i) => (
-                <motion.a
-                  key={link}
-                  href={`#${link.toLowerCase()}`}
-                  className="footer-item text-gray-400 text-sm font-medium"
-                  whileHover={{ y: -3, color: "#fff" }}
-                >
-                  {link}
-                </motion.a>
-              ),
-            )}
+            {["Home", "About", "Skills", "Projects", "Contact"].map((link) => (
+              <motion.a
+                key={link}
+                href={`#${link.toLowerCase()}`}
+                className="footer-item text-gray-400 text-sm font-medium"
+                whileHover={{ y: -3, color: "#fff" }}
+              >
+                {link}
+              </motion.a>
+            ))}
           </div>
 
-          {/* Social */}
+          {/* SOCIAL ICONS */}
           <div className="flex gap-6 text-white/70">
             <Link href="https://linkedin.com" target="_blank">
               <FaLinkedin size={22} />
@@ -84,15 +99,11 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Divider */}
+        {/* DIVIDER */}
         <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-[#ef4444]/30 to-transparent mb-8" />
 
-        {/* Bottom */}
-        <motion.div
-          className="text-center footer-item"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-        >
+        {/* COPYRIGHT (FIXED) */}
+        <motion.div className="text-center footer-copyright">
           <p className="text-gray-500 text-xs md:text-sm tracking-wide">
             Copyright © {currentYear}{" "}
             <span className="text-gray-300 font-medium">Ashikur Rahman</span> |
