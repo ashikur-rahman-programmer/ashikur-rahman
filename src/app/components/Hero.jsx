@@ -87,13 +87,14 @@ export default function Hero() {
     <section
       id="home"
       ref={heroRef}
-      className="bg-[#080c15] flex items-center justify-center px-6 py-5 md:py-10 overflow-hidden"
+      className="relative bg-[#080c15] flex items-center justify-center px-6 pt-20 pb-5 md:pt-24 md:pb-10 overflow-hidden"
     >
       {/* Glow */}
-      <div className="bg-glow absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[150px] rounded-full -z-10" />
-      <div className="bg-glow absolute bottom-0 left-0 w-[500px] h-[500px] bg-red-600/10 blur-[150px] rounded-full -z-10" />
+      <div className="bg-glow absolute top-0 right-0 w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-blue-600/10 blur-[150px] rounded-full -z-10" />
 
-      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div className="bg-glow absolute bottom-0 left-0 w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-red-600/10 blur-[150px] rounded-full -z-10" />
+
+      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center">
         {/* LEFT */}
         <div className="order-2 md:order-1 z-10 text-center lg:text-left">
           <h2 className="hero-subtitle text-xl md:text-2xl font-bold text-white/70 mb-2">
@@ -163,7 +164,7 @@ export default function Hero() {
         </div>
 
         {/* RIGHT */}
-        <div className="order-1 md:order-2 relative flex justify-center items-center h-[550px] w-full">
+        <div className="order-1 md:order-2 relative flex justify-center items-center h-[350px] md:h-[550px] w-full">
           <div className="hero-image relative w-[340px] h-[340px] md:w-[480px] md:h-[480px] rounded-full p-[4px] bg-gradient-to-b from-[#3b82f6] via-purple-500 to-[#ef4444]">
             <div className="w-full h-full rounded-full bg-[#080c15] overflow-hidden">
               <Image

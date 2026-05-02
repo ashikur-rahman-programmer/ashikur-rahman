@@ -93,7 +93,7 @@ export const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="bg-[#080c15] py-24 px-6">
+    <section id="projects" className="bg-[#080c15] py-24 px-6 overflow-hidden">
       <div className="container mx-auto">
         {/* Header */}
         <div className="text-center mb-16">

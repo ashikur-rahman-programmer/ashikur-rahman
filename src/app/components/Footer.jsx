@@ -55,7 +55,7 @@ export default function Footer() {
   return (
     <footer
       ref={footerRef}
-      className="bg-[#080c15] pt-16 pb-8 px-6 border-t border-white/5"
+      className="bg-[#080c15] pt-16 pb-8 px-6 border-t border-white/5 overflow-hidden"
     >
       <div className="container mx-auto">
         {/* TOP SECTION */}

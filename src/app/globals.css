@@ -21,3 +21,10 @@ body {
   z-index: 9999;
   transform: translate(-50%, -50%);
 }
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}

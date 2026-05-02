@@ -65,9 +65,9 @@ export default function About() {
       <div className="container mx-auto md:py-6 px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
         {/* LEFT IMAGE */}
         <div className="about-image relative group">
-          <div className="h-90 w-102 absolute -inset-1 bg-gradient-to-r from-blue-600 to-red-500 rounded-3xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+          <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-red-500 rounded-3xl blur opacity-25 group-hover:opacity-50 transition duration-1000" />
 
-          <div className="about-image-inner relative bg-[#0d121f] rounded-3xl overflow-hidden h-90 w-100 border border-white/10">
+          <div className="about-image-inner relative bg-[#0d121f] rounded-3xl overflow-hidden w-full h-[350px] md:h-[420px] border border-white/10">
             <Image
               src={aboutImg}
               alt="Ashikur Rahman About"

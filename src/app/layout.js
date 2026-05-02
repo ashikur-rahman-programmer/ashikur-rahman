@@ -15,7 +15,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${montserrat.className} h-full antialiased`}>
+    <html
+      lang="en"
+      className={`${montserrat.className} h-full antialiased`}
+      suppressHydrationWarning
+    >
       <body className="bg-[#020202] text-white antialiased">
         <LenisProvider>{children}</LenisProvider>
       </body>

@@ -51,7 +51,7 @@ const Navbar = () => {
   return (
     <nav
       ref={navRef}
-      className="sticky top-0 z-40 w-full border-b border-white/5 bg-background/70 backdrop-blur-lg"
+      className="fixed top-0 z-40 w-full border-b border-white/5 bg-background/70 backdrop-blur-lg"
     >
       <header className="container mx-auto flex h-16 items-center justify-between">
         {/* LEFT */}
