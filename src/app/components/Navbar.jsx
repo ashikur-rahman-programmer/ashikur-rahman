@@ -77,10 +77,10 @@ const Navbar = () => {
         {/* DESKTOP MENU */}
         <ul className="hidden items-center gap-6 md:flex">
           {menuItems.map((item, i) => (
-            <li key={i} className="nav-item">
+            <li key={i} className="nav-item ">
               <button
                 onClick={() => handleClick(item)}
-                className={`transition font-medium ${
+                className={`transition font-medium cursor-pointer ${
                   active === item
                     ? "text-[#3b82f6]"
                     : "text-white/70 hover:text-white"
@@ -124,7 +124,7 @@ const Navbar = () => {
                 >
                   <button
                     onClick={() => handleClick(item)}
-                    className={`block py-2 w-full text-left ${
+                    className={`block py-2 w-full text-left cursor-pointer ${
                       active === item ? "text-[#3b82f6]" : "text-white/70"
                     }`}
                   >
