@@ -14,7 +14,14 @@ const Navbar = () => {
   const [active, setActive] = useState("Home");
   const navRef = useRef();
 
-  const menuItems = ["Home", "About", "Skills", "Projects", "Contact"];
+  const menuItems = [
+    "Home",
+    "About",
+    "Skills",
+    "Education",
+    "Projects",
+    "Contact",
+  ];
 
   useEffect(() => {
     gsap.from(navRef.current, {

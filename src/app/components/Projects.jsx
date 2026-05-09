@@ -130,7 +130,7 @@ export default function Projects() {
                 <div className="absolute inset-0 bg-gradient-to-r from-[#3b82f6] via-transparent to-[#ef4444] opacity-40 group-hover:opacity-100 transition-opacity duration-500" />
 
                 {/* Card */}
-                <div className="relative bg-[#0a0f1a] rounded-[2rem] p-8 flex flex-col h-[520px]">
+                <div className="relative bg-[#0a0f1a] rounded-[2rem] p-8 flex flex-col h-[540px]">
                   {/* Image */}
                   <div className="relative w-full aspect-video rounded-2xl overflow-hidden mb-6 flex-shrink-0 border border-white/5">
                     <Image
