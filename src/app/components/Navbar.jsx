@@ -105,9 +105,17 @@ const Navbar = () => {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          <Button className="items-center gap-2 flex px-4 py-2 border border-[#3b82f6]/40 text-white hover:bg-[#3b82f6]/10 rounded-full font-medium cursor-pointer">
-            <IoDocumentSharp /> Resume
-          </Button>
+          <a
+            href="/resume.pdf"
+            download="Ashikur_Rahman_Resume.pdf"
+            target="_blank" // সেফটি হিসেবে এটি যোগ করুন
+            rel="noopener noreferrer"
+            className="no-underline"
+          >
+            <Button className="items-center gap-2 flex px-4 py-2 border border-[#3b82f6]/40 text-white hover:bg-[#3b82f6]/10 rounded-full font-medium cursor-pointer">
+              <IoDocumentSharp /> Resume
+            </Button>
+          </a>
         </motion.div>
       </header>
 
