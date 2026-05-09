@@ -108,7 +108,7 @@ export default function Education() {
                   {edu.details.map((item, idx) => (
                     <div
                       key={idx}
-                      className="flex justify-between items-center text-sm border-b border-white/5 pb-2 last:border-0"
+                      className="flex gap-8 justify-between items-center text-sm border-b border-white/5 pb-2 last:border-0"
                     >
                       <span className="text-white/40">{item.label}</span>
                       <span className="text-white/80 font-semibold">
