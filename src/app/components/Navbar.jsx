@@ -106,9 +106,8 @@ const Navbar = () => {
           whileTap={{ scale: 0.95 }}
         >
           <a
-            href="/resume.pdf"
-            download="Ashikur_Rahman_Resume.pdf"
-            target="_blank" // সেফটি হিসেবে এটি যোগ করুন
+            href="https://drive.google.com/file/d/1NDIRnp09YhSlv_WF1BXiOO8p363mJE2C/view?usp=drive_link"
+            target="_blank"
             rel="noopener noreferrer"
             className="no-underline"
           >
