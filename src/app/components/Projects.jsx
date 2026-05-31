@@ -14,18 +14,39 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 export const projects = [
-  // {
-  //   id: 1,
-  //   title: "Online Book Borrowing Platform",
-  //   desc: "A comprehensive digital library system where users can browse, search, and borrow books with secure authentication using Better Auth.",
-  //   tags: ["Next.js", "MongoDB", "Better Auth", "API"],
-  //   image:
-  //     "https://i.ibb.co.com/7t31QsDx/localhost-3000-Online-book-borrowing-platform-cvscreenshot.jpg",
-  //   github: "https://github.com/ashikur-rahman/online-book-borrowing-platform",
-  //   live: "https://online-book-borrowing.vercel.app",
-  // },
   {
     id: 1,
+    title: "Apex Drive Car Rental Platform",
+    desc: "A full-stack car rental platform where users can explore, book, and manage vehicles with secure authentication and booking management.",
+    tags: ["Next.js", "MongoDB", "Better Auth", "JWT"],
+    image:
+      "https://i.ibb.co.com/W4YTJ0yP/apexdrive-rental-car-vercel-app-Apex-Drive-Rental-Car-Platform-cvscreenshot-4.jpg",
+    github:
+      "https://github.com/ashikur-rahman-programmer/apexdrive-rental-car-platform",
+    live: "https://apexdrive-rental-car.vercel.app",
+  },
+  {
+    id: 2,
+    title: "Online Book Borrowing Platform",
+    desc: "A comprehensive digital library system where users can browse, search, and borrow books with secure authentication.",
+    tags: ["Next.js", "MongoDB", "Better Auth", "API"],
+    image:
+      "https://i.ibb.co.com/7t31QsDx/localhost-3000-Online-book-borrowing-platform-cvscreenshot.jpg",
+    github: "https://github.com/ashikur-rahman/online-book-borrowing-platform",
+    live: "https://online-book-borrowing.vercel.app",
+  },
+  {
+    id: 3,
+    title: "KeenKeeper",
+    desc: "A modern productivity platform designed to organize tasks, manage workflows, and improve daily productivity.",
+    tags: ["Next.js", "MongoDB", "React", "Better Auth"],
+    image:
+      "https://i.ibb.co.com/bRLQmZH9/keen-keeper-website-olive-vercel-app-Keen-Keeper-Keep-Your-Friendships-Alive-cvscreenshot.jpg",
+    github: "https://github.com/ashikur-rahman-programmer/keep-keeper-website",
+    live: "https://keen-keeper-website-olive.vercel.app/",
+  },
+  {
+    id: 4,
     title: "PixGen Web Application",
     desc: "A creative web app for generating and customizing digital assets with secure user accounts and content management.",
     tags: ["Next.js", "Better Auth", "UI/UX", "API"],
@@ -36,7 +57,7 @@ export const projects = [
     live: "https://pixgen-web.vercel.app",
   },
   {
-    id: 2,
+    id: 5,
     title: "The Dragon News Website",
     desc: "A dynamic news portal delivering real-time updates with authentication, protected content, and modern Next.js architecture.",
     tags: ["Next.js", "Better Auth", "MongoDB", "App Router"],
@@ -47,10 +68,10 @@ export const projects = [
     live: "https://the-dragon-news.vercel.app",
   },
   {
-    id: 3,
+    id: 6,
     title: "Digital Tools Buying Website",
     desc: "A React-based platform for browsing and purchasing digital tools with API integration and dynamic UI.",
-    tags: ["React", "JavaScript", "API", "CSS"],
+    tags: ["React", "JavaScript", "API", "Tailwind CSS"],
     image:
       "https://i.ibb.co.com/7dVFr8nP/digital-tools-buying-website1-netlify-app-1024x768desktop-8e4aa6.jpg",
     github:
@@ -58,7 +79,7 @@ export const projects = [
     live: "https://digital-tools-buying-website1.netlify.app/",
   },
   {
-    id: 4,
+    id: 7,
     title: "Job Application Tracker",
     desc: "Helps users track job applications, status, and progress with a clean UI.",
     tags: ["HTML", "CSS", "JavaScript"],
@@ -69,7 +90,7 @@ export const projects = [
     live: "https://ashikur-rahman-programmer.github.io/job-application-tracker-website/",
   },
   {
-    id: 5,
+    id: 8,
     title: "AI Model Hub",
     desc: "Showcases AI models and tools with a modern interface using React and APIs.",
     tags: ["React", "API", "Tailwind"],
@@ -79,10 +100,10 @@ export const projects = [
     live: "https://ai-model-website.netlify.app/",
   },
   {
-    id: 6,
+    id: 9,
     title: "GitHub Issues Tracker",
     desc: "Tracks GitHub issues using API and displays them in a structured UI.",
-    tags: ["React", "API", "GitHub API"],
+    tags: ["React", "API", "API"],
     image:
       "https://i.ibb.co.com/wZ6rT2t4/github-issues-tracker-web-application-netlify-app-Github-Tracker-Web-Application-cvscreenshot.jpg",
     github:
